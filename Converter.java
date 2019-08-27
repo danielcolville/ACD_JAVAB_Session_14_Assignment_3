@@ -37,6 +37,8 @@ public class Converter extends HttpServlet {
 		hm.put("EUR-USD",0.9);
 		hm.put("USD-FR",1/0.98);
 		hm.put("FR-USD",0.98);
+		hm.put("USD-YEN",0.0095);
+		hm.put("YEN-USD",1/0.0095);
 	}
 
 	/**
@@ -64,12 +66,14 @@ public class Converter extends HttpServlet {
 				"<option value='USD'>USD</option>"+
 				"<option value='EUR'>Euros</option>"+
 				"<option value='GBP'>British Pounds</option>"+
-				"<option value='FR'>Swiss Francs</option></select>"+
+				"<option value='FR'>Swiss Francs</option>"+
+				"<option value='YEN'>Japanese Yen</option></select>"+
 				"Currency Type2 <select name=\"curr2\">\r\n" + 
 				"<option value='USD'>USD</option>"+
 				"<option value='EUR'>Euros</option>"+
 				"<option value='GBP'>British Pounds</option>"+
-				"<option value='FR'>Swiss Francs</option></select>"+
+				"<option value='FR'>Swiss Francs</option>"+
+				"<option value='YEN'>Japanese Yen</option></select>"+
 				"<input type='submit' value='calculate'>"+
 				"\r\n" + 
 				"</form>\r\n" + 
