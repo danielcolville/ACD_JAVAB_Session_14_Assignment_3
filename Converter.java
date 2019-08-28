@@ -1,4 +1,4 @@
-package session14;
+package dbproperties;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -103,7 +103,7 @@ public class Converter extends HttpServlet {
 				+ "</tr><tr>"
 				+ "		<td>"+val1 +"</td>"+
 		"<td>" + currOne+"</td>"
-		+ "<td>"+ currTwo+"</td><td>"+ val2+"</td></tr></table></body></html>");
+		+ "<td>"+ currTwo+"</td><td>"+ Math.round(val2*100)/100.0+"</td></tr></table></body></html>");
 		doGet(request, response);
 	}
 	public static double getRate(String curr1,String curr2,HashMap<String,Double> hm) {
